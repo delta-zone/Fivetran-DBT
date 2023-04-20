@@ -1,0 +1,26 @@
+
+Fivetran_dbt:
+  outputs:
+    dev:
+      dataset: Delta_Loader
+      job_execution_timeout_seconds: 1000
+      job_retries: 1
+      location: US
+      method: service-account-json
+      priority: interactive
+      project: silken-apex-356515
+      threads: 2
+      type: bigquery
+      keyfile_json:
+        "type": "service_account"
+        "project_id": "silken-apex-356515"
+        "private_key_id": "1654656d11c0596ba62192ff381d2e5525a50766"
+        "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDABsAKTsTedWs8\nK1lzM0+fpfSla+a0XH2ikWkp4VWtfvSCbLhAd7T/qaez/xHIP8WnBRWa4mypEuhw\nSTfDgXJen8G1AiahOqr3L8KwuASufQJHcfOkeQNh8xplG3145DtUBiJUasJ5DVD/\nA6aIY8CaWx9HEER1lEGMU4GiXzx1Dx4eh2JKBgMzpm2wsQrlDElN0fAOZvY2wntj\ng/LbdHrNq+HjAxD3h7llaffZNwwbg8wKBnbgW0Iq16pWwXGhvIiC9jheL3x+TuV0\nRj5VZvowakU79mUmyn92fh1PPo3zaY9XDBQKqAYHZlLsj/OH8Bcyd3gZnfe+S1V7\nOqYdnV73AgMBAAECggEAEfBvf2cFcEzi5D+efysjfKQp20xdxKrBV+8itnVlJiyu\nlgKnIeqs/5dvYdrp493FTsmkT5Bom1D3YwoMChktQJbHJ2xYhIZxE1+kXhMK6Own\nytnj65Eclkl6RUjQq3sS6dIa4e0JVvq9/tzt8V70TtdFcEOeSae8ieoBOdSQ1tSV\ny8yUGcV4o/LnZckemHMbyd+z+7h62wNFd0GFn4+v4HhYU9CzP8nKkiPcVTB5HnUt\np3r/9viATPwo9KVEPg4cjQIBj2CHMpCMzVPvHOkCY46sJHzPYoOUwfoy0AThhTgE\nny0/32e36GDXEF1HNza5PMazSwrC0EIOAom/VuWkLQKBgQDfNh1+JtuigPk6vCye\nNnYy+o8MBFWrojsCOw4lYneHE90kGkXn4dXzHMgEbp0Gaah/wH3Rio/7UsghOW6O\nsrLLXDrJ0iZdedHFuti1GYt4mLYamdERH9sIOTjLvjiJTLOKHJVwEUq/Zf/QttBI\nkYPRMboDchxz+iJsZc3VVBz/gwKBgQDcO+teh75g47NPZqUl7nfN/VCnObxjCoUn\nTthRromdD9QaFGCgKynovZDET97QB9p/tegWFcegrgT1m0FUZpZksOE/s1CzrgJY\nfZVoP/iNweP4qQFPylmOC77Al38WBTTt84h4wP8kTEecexol1JPvYyZHJtL+TGRb\neupShto0fQKBgHHSO4nXsMoV8IE18Z6f8Pgf8o/TKgiCioqhqJ4BryfPRkYhq6IJ\n9DqrY4d3DFV3zXePpdkTSkaDORBQJANaNngiyMufgPbLpt+oXtdCdm+Bl+LKquSL\nlPqFi2PB1TyWQztbRgzGlJIzJha9EkrfARPMwqj9KGsvkxwpcaOl57+XAoGBANLk\nWgYijK6xPNKq4zhIe9b4XNRVmE1rFIjImqLVNRf+wUfb/Y9C5hXl+QvTw/SHoLcs\n1TrYzlnSahNbAZs1xYxUSM48AuqclchxMbIrl/L/GTPTetsSVOGN47L/H4ZRpBa8\nXxHrFieHGAgDZc2WG7dfxZba2a8ELhHfySUP10HtAoGAO4jZqIcPhL+ZomyNHBbl\n6pHTXSL0tS5ct4IEmFqMoO0snaaGXFVPfSkJBEgcO3iIQ9uhZmauKLXWt2riG2I9\nz/MDgCR2TTSlOECukaSFyGyRAJLff9x459xh1trqXkBFKVepveDqhYEBKsWRrLtu\nPv1sdT6AE+tZDg7To+h90Bg=\n-----END PRIVATE KEY-----\n"
+        "client_email": "bq-loader@silken-apex-356515.iam.gserviceaccount.com"
+        "client_id": "106459365350037795047"
+        "auth_uri": "https://accounts.google.com/o/oauth2/auth"
+        "token_uri": "https://oauth2.googleapis.com/token"
+        "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs"
+        "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bq-loader%40silken-apex-356515.iam.gserviceaccount.com"
+
+  target: dev
